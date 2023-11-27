@@ -501,7 +501,6 @@ function encodeToRot13(str) {
         (char.charCodeAt() > 64 && char.charCodeAt() < 91) ||
         (char.charCodeAt() > 96 && char.charCodeAt() < 123)
       ) {
-        console.log(char.charCodeAt(0));
         return String.fromCharCode(
           char.charCodeAt(0) + (char.toLowerCase() < 'n' ? 13 : -13)
         );
